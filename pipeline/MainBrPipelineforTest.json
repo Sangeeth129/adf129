@@ -1,0 +1,20 @@
+{
+	"name": "MainBrPipelineforTest",
+	"properties": {
+		"activities": [
+			{
+				"name": "Waiting",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 10
+				}
+			}
+		],
+		"folder": {
+			"name": "TestGithub"
+		},
+		"annotations": []
+	}
+}
