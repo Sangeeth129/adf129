@@ -5,6 +5,15 @@
 		"factoryName": {
 			"value": "sangeethaADF"
 		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"OnPremSqlServer_connectionString": {
+			"value": ""
+		},
 		"containerUri": {
 			"value": ""
 		},
