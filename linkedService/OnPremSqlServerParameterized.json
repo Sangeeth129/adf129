@@ -1,0 +1,21 @@
+{
+	"name": "OnPremSqlServerParameterized",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"LinkDBservice": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=HIMAKARTHIKEYA\\KKMSSQL;initial catalog=@{linkedService().LinkDBservice};user id=sa",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjMGU2NTQxOC05MDY0LTRjOTAtOGFlMy0wYjJjMTZkNDQ2Y2UiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntimeGit",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
