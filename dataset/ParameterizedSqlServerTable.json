@@ -1,0 +1,27 @@
+{
+	"name": "ParameterizedSqlServerTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OnPremSqlServerParameterized",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"LinkDBservice": {
+					"value": "@dataset().DBParam",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"DBParam": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "emp"
+		}
+	}
+}
